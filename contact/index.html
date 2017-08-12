@@ -21,21 +21,25 @@
   </nav>
 
   <div class="container">
-
-  <form class="action" action="index.html" method="post">
-    <input type="text" name="firstname" placeholder="First Name" size="100" autofocus>
-    <input type="text" name="lastname" placeholder="Last Name" size="100">
-    <input type="email" name="useremail" placeholder="your.email@example.com">
-
-    <label>Whats this message about?
-      <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you</span>
-      <input type="radio" name="subject" value="personal" checked><span>Personal message</span>
-    <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
-  </labe>
+    <fieldset>
+  <legend>About You</legend>
+  <form class="" action="https://formspree.io/shane@wearehi5.com"
+      method="POST""  method="post">
+    <input type="text" name="firstname" placeholder="First Name" size="100" autofocus><br>
+    <input type="text" name="lastname" placeholder="Last Name" size="100"><br>
+    <input type="email" name="useremail" placeholder="your.email@example.com"><br>
+</fieldset>
+    <label>Whats this message about?<br>
+      <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you</span><br>
+      <input type="radio" name="subject" value="personal" checked><span>Personal message</span><br>
+    <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span><br>
+  </label>
 
     <input type="checkbox" name="optin" value="trusting"checked>Subscribe me to your newsletter!
     <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox
 
+<fieldset>
+   <legend>Marketing</legend>
    <label for="marketing">How did you hear about me?</label>
    <select name="marketing">
      <optgroup label="online">
@@ -52,7 +56,7 @@
     </optgroup>
     <option value="other">Other</option>
   </select>
-
+</fieldset>
   <textarea name="user_message" rows="8" cols="40"></textarea>
   <input type="submit">
 </form>
