@@ -1,11 +1,45 @@
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100vw;
+}
+nav.container {
+  //these styles will extend the styles already contained in the .container class
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 body {
   background-color: blue;
   color: red;
+}
+.container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+}
+header {
+  margin-top: 1.3em;
 }
 h1 {
   font-size: 6em;
   background-color: #eaeaea;
   color: red;
+}
+.sidebar {
+  float: right;
+  width: 25%;
+  background-color: #eaeaea;
+  margin-top: 2%;
+}
+.content-area{
+  width: 75%;
+  float: left;
 }
 .first-list{
   background-color: red;
@@ -18,4 +52,6 @@ h1 {
     color: red;
     font-size: 1.5em;
   }
-  
+  .footer{
+    background-color: #ffffff;
+  }
