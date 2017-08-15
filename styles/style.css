@@ -6,7 +6,6 @@ nav{
   width: 100vw;
 }
 nav.container {
-  //these styles will extend the styles already contained in the .container class
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
