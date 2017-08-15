@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contact</title>
 
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 <link type="text/css" rel="stylesheet" href="../styles/style.css"/>
 
 <title>Shane Bouverie | Contact</title>
@@ -33,6 +34,7 @@
     <input type="text" name="lastname" placeholder="Last Name" size="100"><br>
     <input type="email" name="useremail" placeholder="your.email@example.com"><br>
 </fieldset>
+<br>
     <label>Whats this message about?<br>
       <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you</span><br>
       <input type="radio" name="subject" value="personal" checked><span>Personal message</span><br>
@@ -41,7 +43,7 @@
 
     <input type="checkbox" name="optin" value="trusting"checked>Subscribe me to your newsletter!
     <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox
-
+<br>
 <fieldset>
    <legend>Marketing</legend>
    <label for="marketing">How did you hear about me?</label>
@@ -61,9 +63,10 @@
     <option value="other">Other</option><br>
   </select>
 </fieldset>
+<br>
   <textarea name="user_message" rows="8" cols="40"></textarea><br>
 
-  <input type="submit">
+  <input type="submit" class="btn btn-lg">
 </form>
 
   </div>

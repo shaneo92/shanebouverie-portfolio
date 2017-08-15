@@ -31,14 +31,14 @@ h1 {
   color: red;
 }
 .sidebar {
-  float: right;
+  /*float: right;
   width: 25%;
   background-color: #eaeaea;
-  margin-top: 2%;
+  margin-top: 2%;*/
 }
 .content-area{
-  width: 75%;
-  float: left;
+  /*width: 75%;
+  float: left;*/
 }
 .first-list{
   background-color: red;

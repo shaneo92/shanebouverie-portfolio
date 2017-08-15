@@ -1,0 +1,22 @@
+{
+  "name": "shanebouverie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaneo92/shanebouverie-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaneo92/shanebouverie-portfolio/issues"
+  },
+  "homepage": "https://github.com/shaneo92/shanebouverie-portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
