@@ -30,15 +30,19 @@ h1 {
   background-color: #eaeaea;
   color: red;
 }
+.content-area{
+  /*width: 75%;
+  float: left;*/
+}
+.greeting{
+  background-color: #000000;
+  color: #ffffff;
+}
 .sidebar {
   /*float: right;
   width: 25%;
   background-color: #eaeaea;*/
   margin-top: 2%;
-}
-.content-area{
-  /*width: 75%;
-  float: left;*/
 }
 .first-list{
   background-color: red;
