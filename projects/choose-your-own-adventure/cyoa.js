@@ -1,3 +1,10 @@
+var gameOver = false
+
+function gameOverAlert () {
+  alert ('GAME OVER')
+}
+
+
 var response = prompt("You walk into a room with a chair and a window. Type 'sit' to sit in the chair, type 'gaze' to gaze wistfully out the window and sigh");
 
 if(response === "sit"){
