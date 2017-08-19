@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/shaneo92/shanebouverie-portfolio#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
   }
 }
