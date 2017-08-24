@@ -38,3 +38,45 @@ var autoFunnySentence = function () {
 }
 
 autoFunnySentence()
+
+var fn = function () {
+  console.log('heeey')
+}
+
+// Native JS event listener
+// Use below if using multiple times on site
+document.querySelector('#target').addEventListener('click', fn);
+
+// Below is used for single event function
+document.querySelector('#target').addEventListener('click', function(){
+  console.log('Same Deal');
+});
+
+// Jquery event listener
+$('div').on('click', function() {
+  console.log('A div has been clicked!')
+})
+
+$('p').click (function(){
+  $('p').show().css('color', 'red').text('boom goes the dynamite!')
+})
+
+// // Mouseover Listener
+// $('li').on('mouseover', function(event){
+//   var target = event.target
+//   $(target).addClass('highlighted')
+// })
+//
+// $('li').on('mouseleave', function(event){
+//   var target = event.target
+//   $(target).removeClass('highlighted')
+// })
+
+// Mouseover Listener
+$('li').on('mouseover', function(){
+  $(this).addClass('highlighted')
+})
+
+$('li').on('mouseleave', function(){
+  $(this).removeClass('highlighted')
+})

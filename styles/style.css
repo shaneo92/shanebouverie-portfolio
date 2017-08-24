@@ -58,3 +58,9 @@ h1 {
   .footer{
     background-color: #ffffff;
   }
+
+  .highlighted{
+    font-weight: bolder;
+    color: green;
+    background-color: blue;
+  }
