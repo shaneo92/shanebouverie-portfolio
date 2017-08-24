@@ -64,3 +64,12 @@ h1 {
     color: green;
     background-color: blue;
   }
+
+  .loser{
+    background-color: red;
+    color: #ffffff;
+  }
+  .winner{
+    background-color:green;
+    color: #ffffff;
+  }
