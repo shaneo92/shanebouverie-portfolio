@@ -47,3 +47,7 @@ $('#roll-button').on('click', function(){
     }
   }
 })
+
+$('#play-button').on('click', function(){
+    location.reload(true)
+  })
