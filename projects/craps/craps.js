@@ -9,19 +9,27 @@ var diceRoll = function (){
   return randomNum
 }
 
+var rollDice = function (numberOfDice){
+  var sum = 0
+  for (var i = 0; i < numberOfDice; i++) {
+    sum = sum + diceRoll()
+  }
+  return sum
+}
+
+
+
 $('#roll-button').on('click', function(){
   if(gameState.firstRoll){
+     var sum = rollDice(2)
+     $('.roll-result').text(sum)
 
-    var die1 = diceRoll()
-    var die2 = diceRoll()
-    var sum = die1 + die2
-    $('.roll-result').text(sum)
     if(sum === 2 || sum === 3 || sum === 12) {
-      $('.status').text('You Lose!').addClass('loser')
+      $('.status').text('Too Bad You Suck!').addClass('loser')
       gameState.gameOver = true
       $('#roll-button').attr('disabled', 'true')
     } else if(sum === 7 || sum === 11){
-      $('.status').text('You Win!').addClass('winner')
+      $('.status').text('You Bloody Ripper!').addClass('winner')
       gameState.gameOver = true
       $('#roll-button').attr('disabled', 'true')
     } else {
@@ -30,10 +38,9 @@ $('#roll-button').on('click', function(){
       gameState.firstRoll = false
     }
   } else {
-    var die1 = diceRoll()
-    var die2 = diceRoll()
-    var sum = die1 + die2
+    var sum = rollDice(2)
     $('.roll-result').text(sum)
+
     if(sum === 7) {
       $('.status').text('You Lose!').addClass('loser')
       gameState.gameOver = true
