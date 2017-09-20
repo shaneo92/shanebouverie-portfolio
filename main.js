@@ -85,5 +85,5 @@ var elementLister = function(contactElement) {
 
 // forEach
 contactArray.forEach(function(item){
-  $('.second-list').append(item)
+  $('.second-list').append(item);
 })
