@@ -11,24 +11,33 @@ nav.container {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  height: 80px;
+  background-color: #999999;
+  color: #fff;
+  width: 1500px;
+}
+nav.container a{
+  color: #fff;
 }
 body {
-  background-color: blue;
-  color: red;
+  background-color: #fff;
+  color: #000000;
 }
 .container {
   position: relative;
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
   overflow: auto;
 }
-header {
+.header {
   margin-top: 1.3em;
+  text-align: center;
+  width: 100%;
 }
 h1 {
-  font-size: 6em;
+  font-size: 3em;
   background-color: #eaeaea;
-  color: red;
+  color: #add8e6;
 }
 .content-area{
   /*width: 75%;
@@ -40,23 +49,26 @@ h1 {
 }
 .sidebar {
   /*float: right;
-  width: 25%;
-  background-color: #eaeaea;*/
+  width: 25%;*/
+  background-color: #eaeaea;
   margin-top: 2%;
+  padding-top: 3%;
 }
 .first-list{
-  background-color: red;
+  background-color: #add8e6;
   color: #ffffff;}
 .second-list{
     background-color: #ffffff;
     color: blue;
   }
   a {
-    color: red;
-    font-size: 1.5em;
+    color: #e6add8;
   }
   .footer{
-    background-color: #ffffff;
+    background-color: #999999;
+    width: 100%;
+    padding:2%;
+    color: #fff;
   }
 
   .highlighted{
@@ -64,7 +76,50 @@ h1 {
     color: green;
     background-color: blue;
   }
-
+  .div1{
+    display:inline-block;
+    background-color: #eaeaea;
+    width: 21%;
+    padding:2%;
+    margin: 0 2% 5% 0;
+    box-shadow: 0 5px 11px 1px rgba(0,0,0,0.25);
+  }
+  .div2{
+    display:inline-block;
+    background-color: #eaeaea;
+    width: 21%;
+    padding:2%;
+    margin: 0 2% 5% 0;
+    box-shadow: 0 5px 11px 1px rgba(0,0,0,0.25);
+  }
+  .div3{
+    display:inline-block;
+    background-color: #eaeaea;
+    width: 21%;
+    padding:2%;
+    margin: 0 2% 5% 0;
+    box-shadow: 0 5px 11px 1px rgba(0,0,0,0.25);
+  }
+  @media (max-width: 767px){
+    .div1{
+      display:block;
+      width: 100%;
+      min-height: 60px;
+      margin: 0 0 5% 0;
+    }
+    .div2{
+      display:block;
+      width: 100%;
+      min-height: 60px;
+      margin: 0 0 5% 0;
+    }
+    .div3{
+      display:block;
+      width: 100%;
+      min-height: 60px;
+      margin: 0 0 5% 0;
+    }
+  }
   .loser{
     background-color: red;
     color: #ffffff;
@@ -73,3 +128,105 @@ h1 {
     background-color:green;
     color: #ffffff;
   }
+  /*Table Styling*/
+table {
+    width: 90%;
+}
+.first-column{
+    border-bottom:0px!important;
+    color: #004F71;
+    font-style: italic;
+    text-align: center;
+    padding: 1em 0em;
+    width: 20%;
+}
+.second-column-header {
+    background-color: #EE7A57;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+}
+.second-column-header h3{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 7%;
+}
+.second-column{
+    background-color: #FFEFE9;
+    border: 1px solid #FFFFFF;
+    color: #EE7A57;
+    text-align: center;
+    font-size: 1.3em;
+}
+.third-column-header{
+    background-color: #8FD5BD;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+}
+.third-column-header h3{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 7%;
+}
+.third-column{
+    background-color: #EAF7F3;
+    border: 1px solid #FFFFFF;
+    color: #7FCEAF;
+    text-align: center;
+    font-size: 1.3em;
+}
+.fourth-column-header{
+    background-color: #59CBE8;
+    border: 1px solid #FFFFFF;
+    color: #59CBE8;
+    text-align: center;
+}
+.fourth-column-header h3{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 7%;
+}
+.fourth-column{
+    background-color: #E1F1F5;
+    border: 1px solid #FFFFFF;
+    color: #59CBE8;
+    text-align: center;
+    font-size: 1.3em;
+}
+@media (max-width: 600px){
+  .second-column-header h3{
+    font-size: 1em;
+  }
+  .third-column-header h3{
+    font-size: 1em;
+  }
+  .fourth-column-header h3{
+    font-size: 1em;
+  }
+}
+.icons-with-values{
+    text-align: center;
+    display: inline-block;
+    width: 6%;
+}
+.values{
+    text-align: right;
+    display: inline-block;
+    width: 0%;
+}
+.specialist-row{
+    background: linear-gradient(131.72deg, #F4F6F6 0%, #E1E8E7 100%);
+    margin-bottom:-8%;
+    padding: 2% 0 5% 0;
+}
+.specialist-column-left{
+    padding: 0 0 0 10%;
+}
+.specialist-column-right{
+    padding: 0 10% 0 0;
+}
+.contact-form-styling{
+  background-color: #eaeaea;
+  padding: 5%;
+  box-shadow: 0 5px 11px 1px rgba(0,0,0,0.25);
+  margin: 5% 0;
+}
