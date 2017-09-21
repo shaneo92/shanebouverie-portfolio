@@ -1,6 +1,8 @@
 var contactArray = [
-  '<li><a href="https://github.com/shaneo92">Github</a></li>',
-  '<li><a href="https://www.linkedin.com/in/shane-bouverie-3256a747">Linkedin</a></li>'
+  '<li><a href="https://www.linkedin.com/in/shane-bouverie-3256a747">Linkedin</a></li>',
+  '<li><a href="https://www.linkedin.com/in/shane-bouverie-3256a747">Different Profile</a></li>',
+  '<li><a href="https://www.linkedin.com/in/shane-bouverie-3256a747">Different Profile</a></li>',
+  '<li><a href="https://www.linkedin.com/in/shane-bouverie-3256a747">Different Profile</a></li>',
 ]
 
 
@@ -31,7 +33,6 @@ contactObject.quote = [
 //   return contactObject.github
 // }
 
-console.log(contactObject)
 
 var elementLister = function(contactElement) {
   var listString = "<li> " + contactElement + "</li>";
